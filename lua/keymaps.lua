@@ -26,3 +26,8 @@ vim.keymap.set("i", "<C-Space>", function() require("cmp").complete() end, opts)
 -- ノーマルモードで ; を押すと行末に移動 $(shift + 4) の代替
 vim.api.nvim_set_keymap('n', ';', '$', { noremap = true, silent = true })
 
+-- Esc をiモードの時にjkかkjに当てる
+vim.api.nvim_set_keymap('i', 'jk', '<Esc>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('i', 'kj', '<Esc>', { noremap = true, silent = true })
+
+
