@@ -23,3 +23,6 @@ vim.keymap.set("n", "<leader>rn", vim.lsp.buf.rename, opts)
 -- 補完
 vim.keymap.set("i", "<C-Space>", function() require("cmp").complete() end, opts)
 
+-- ノーマルモードで ; を押すと行末に移動 $(shift + 4) の代替
+vim.api.nvim_set_keymap('n', ';', '$', { noremap = true, silent = true })
+
