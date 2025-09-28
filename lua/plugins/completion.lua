@@ -11,6 +11,8 @@ return {
     },
     config = function()
       local cmp = require("cmp")
+      local max_height = math.floor(vim.o.lines * 0.4)  -- 画面の 40% の高さ
+      local max_width  = math.floor(vim.o.columns * 0.5) -- 画面の 50% の幅
       local luasnip = require("luasnip")
 
       cmp.setup({
@@ -22,8 +24,8 @@ return {
         window = {
           completion = cmp.config.window.bordered(), -- 候補リストに枠
           documentation = cmp.config.window.bordered({
-            max_height = 15, -- ドキュメントウィンドウの最大行数
-            max_width = 80,  -- 最大幅
+            max_height = max_height, -- ドキュメントウィンドウの最大行数
+            max_width = max_width,  -- 最大幅
           }),
         },
         mapping = {
