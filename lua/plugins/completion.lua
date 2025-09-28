@@ -22,9 +22,9 @@ return {
           end,
         },
         window = {
-          completion = cmp.config.window.bordered({   -- ここを追加
-            max_height = max_height,
-            max_width  = max_width,
+          completion = cmp.config.window.bordered({   
+            max_height = max_height, -- ドキュメントウィンドウの最大行数
+            max_width  = max_width, -- 最大幅
           }),
           documentation = cmp.config.window.bordered({
             max_height = max_height, -- ドキュメントウィンドウの最大行数
