@@ -62,7 +62,7 @@ cargo install --path .
 
 ### 4. Neovim で Treesitter パーサーをインストール
 ```vim
-:TSInstall c cpp lua python rust typescript
+:TSInstall c cpp lua python rust typescript javascript
 ```
 - インストール済みパーサー確認：`:TSInstallInfo`
 - 全パーサー更新：`:TSUpdate`
