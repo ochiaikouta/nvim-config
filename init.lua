@@ -25,3 +25,9 @@ require("lazy").setup("plugins")
 
 -- カラースキーム
 vim.cmd.colorscheme("vim")
+
+-- 補完のテーマ
+vim.api.nvim_set_hl(0, "Pmenu", { bg = "#2e2e2e", fg = "#ffffff" })      -- 補完メニュー全体
+vim.api.nvim_set_hl(0, "PmenuSel", { bg = "#4b4b4b", fg = "#ffffff" })   -- 選択中
+vim.api.nvim_set_hl(0, "PmenuThumb", { bg = "#6c6c6c" })                -- optional: スクロールバー
+

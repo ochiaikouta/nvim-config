@@ -8,8 +8,8 @@ map("n", "<C-k>", "<C-w>k")
 map("n", "<C-l>", "<C-w>l")
 
 -- バッファ移動
-map("n", "<Tab>", ":bnext<CR>")
-map("n", "<S-Tab>", ":bprevious<CR>")
+map("n", "<C-Right>", ":bnext<CR>")    -- 次のバッファ
+map("n", "<C-Left>", ":bprevious<CR>") -- 前のバッファ
 
 
 local opts = { noremap = true, silent = true }
