@@ -1,4 +1,4 @@
-# My Neovim Config
+# nvim-config
 
 [![Neovim](https://img.shields.io/badge/Editor-Neovim-blue)](https://neovim.io/)
 [![License](https://img.shields.io/badge/License-MIT-green)](LICENSE)
