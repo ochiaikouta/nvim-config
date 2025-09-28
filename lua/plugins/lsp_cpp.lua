@@ -1,4 +1,3 @@
--- ~/.config/nvim/lua/plugins/lsp/cpp.lua
 return {
   {
     "neovim/nvim-lspconfig",
